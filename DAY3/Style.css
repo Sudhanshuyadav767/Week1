@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+header{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    display:flex;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    flex:1;
+    background:#4CAF50;
+    color:white;
+    text-align:center;
+    padding:40px;
+    border-radius:10px;
+}
+
+/* Tablet */
+@media (max-width: 768px){
+    .container{
+        flex-direction:column;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px){
+    .card{
+        background:#2196F3;
+        padding:25px;
+    }
+}

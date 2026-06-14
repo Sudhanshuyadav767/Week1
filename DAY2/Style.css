@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+header{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    width:80%;
+    margin:20px auto;
+}
+
+/* Box Model */
+.box{
+    background:white;
+    padding:20px;
+    border:3px solid #333;
+    margin-bottom:20px;
+}
+
+/* Flexbox */
+.flex-container{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.item{
+    flex:1;
+    background:#4CAF50;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+/* Grid Layout */
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+.grid-item{
+    background:#2196F3;
+    color:white;
+    padding:20px;
+    text-align:center;
+}

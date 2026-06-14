@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Portfolio</h2>
+
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <img src=Profile.jpg alt="Profile Image">
+        <h1>Sudhanshu Yadav</h1>
+        <h3>Frontend Developer</h3>
+        <p>Passionate about building responsive and user-friendly websites.</p>
+        <button>View Projects</button>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Frontend Developer skilled in HTML, CSS, JavaScript, and React.
+            I enjoy creating modern and responsive web applications.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">React.js</div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: sudhanshuyadav767@gmail.com</p>
+        <p>Phone: +91 9335729100</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Sudhanshu Yadav. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
